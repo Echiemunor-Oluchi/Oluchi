@@ -1,0 +1,710 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
+.section-bg2 {
+  background-color: #f3ead8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Declaring the variables */
+:root {
+  --primary-color: #292621;
+  --secondary-color: #ff2020;
+  --line-color: #edeff2;
+  --menu-button: #222222;
+  --drop-down: #4c4c4c;
+  --paragraph-color: #74706b;
+  --slider-color2: #e0f4f7;
+  --font-size-1: 14px;
+  --font-weight-1: 400;
+  --font-style-1: sans-serif;
+  --font-family-2: "Clicker Script", sans-serif;
+  --font-family-3: "Jost", sans-serif;
+}
+
+/* For the first border */
+header.first-header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #edeff2;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 1440px;
+  max-width: 87%;
+  margin: 0 auto;
+}
+
+.nav-aboutus {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  font-size: var(--font-size-1);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-1);
+  font-style: var(--font-style-1);
+  align-items: center;
+
+}
+
+div.wish {
+  font-size: 12px;
+  border-right: 1px solid #292621;
+  display: flex;
+  justify-content: space-around;
+}
+div.track {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #292621;
+  align-items: center;
+}
+div.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+
+.socialmedia .icons-container i {
+  color: var(--secondary-color);
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.socialmedia .icons-container i:hover {
+  color: var(--secondary-color);
+  transform: rotateY(-90deg);
+}
+
+.socialmedia .icons-container {
+  perspective: 1000px;
+}
+
+/* For the second navbar */
+header.second-header {
+  height: 90px;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav.second-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-3);
+  width: 100%;
+}
+
+div.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+p.capital {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: var(--font-family-3);
+}
+p.shops {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: var(--font-family-3);
+}
+
+.second-links {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+  justify-content: center;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+.main-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  font-size: 25px;
+}
+
+/* Third navbar */
+header.sale {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+nav.sale {
+  display: flex;
+  justify-content: center;
+}
+div.period {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+p.now {
+  color: #cebd9c;
+  border-bottom: 2px solid #cebd9c;
+}
+/* For the menu */
+.menu-container {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Menu Container*/
+@media screen and (max-width: 1200px) {
+  .second-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .second-links {
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--drop-down);
+    height: 60px;
+    position: sticky;
+    top: 5.5rem;
+    z-index: 999;
+    width: 100%;
+    bottom: 2.5em;
+  }
+
+
+  .menu-button {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1.5em;
+    background-color: var(--menu-button);
+    border-radius: 5px;
+    margin-right: 0.1rem;
+    padding: 0.3em 1.0em ;
+  }
+  .menu {
+    color: white;
+    font-size: 20px;
+  }
+  i.bi-list {
+    color: white;
+    font-size: 20px;
+
+  }
+  .navbar {
+    display: none;
+  }
+
+  .main-icons {
+    color: var(--secondary-color);
+    font-size: 25px;
+    display: flex;
+    gap: 0.5em;
+    z-index: 100;
+    cursor: pointer;
+    padding: 0 0 0 4.2em;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: white;
+  }
+  .dropdown-content {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    background-color: var(--drop-down);
+    z-index: 1;
+    left: 0;
+  }
+
+  .dropdown-content div{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    background-color: var(--drop-down);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    align-items: start;
+    gap: 1em;
+  }
+
+
+  .change-text-color{
+    color: white;
+  }
+  .dropdown-content a {
+    color: white;
+    display: flex;
+    justify-self: flex-start;
+    border-radius: .4rem;
+    padding: .3em;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .menu-text-and-burger div:hover {
+    background-color: white;
+    color: black;
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+
+  .menu-text-and-burger{
+    display: flex;
+    cursor: pointer;
+    gap: 0.5em;
+  }
+
+  .dropdown-content a:hover{
+    background-color: rgb(165, 164, 164);
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items:center ;
+  }
+
+  .main-links {
+    display: none;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  p.sale {
+    display: none;
+  }
+  header.sale {
+    position: relative;
+  }
+}
+
+
+
+
+
+
+/* Beginning of Contact Page */
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ead8;
+  padding: 5rem 0 5rem 0;
+}
+.contacttext {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: #292621;
+  font-weight: 500;
+  font-family: var(--font-family-3);
+}
+.contactholder {
+  width: 50%;
+}
+.home-and-contact-text {
+  display: flex;
+  justify-content: center;
+}
+.home-and-contact {
+  border-right: 2px solid #74706b;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+  color: #74706b;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.cont {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .home-and-contact-text {
+    display: flex;
+  }
+  .home-and-contact {
+    width: 30%;
+  }
+}
+
+/* Map Section */
+.map {
+  position: relative;
+  top: 3.5em;
+}
+
+/* Get In Touch Section */
+.get-in-touch-section {
+  position: relative;
+  top: 7em;
+  padding: 0 0 0 0;
+}
+.get-touch {
+  display: flex;
+  gap: 4em;
+}
+.touch-leftside {
+  width: 70%;
+  display: flex;
+  gap: 2.5em;
+  flex-direction: column;
+}
+span.torch {
+  font-size: 27px;
+  font-weight: 600;
+  font-family: var(--font-family-3);
+  color: #292621;
+}
+.two-inputs {
+  display: flex;
+  gap: 1em;
+}
+.two-ins {
+  width: 50%;
+  height: 4em;
+  border-radius: none;
+}
+.textey {
+  height: 4em;
+  border-radius: none;
+}
+button.send {
+  width: 18%;
+  padding: 17px 17px;
+  border: 1px solid var(--secondary-color);
+  background-color: #fff;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.send:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.touch-right-side {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.pic-holder {
+  position: relative;
+  top: 5em;
+  display: flex;
+  gap: 1.3em;
+}
+.house-pic {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  color: #8f9195;
+}
+span.buttonwood {
+  font-size: 16px;
+  color: #2a2a2a;
+  font-family: var(--font-family-3);
+  font-weight: 500;
+}
+p.rosemead {
+  color: #8a8a8a;
+  font-family: var(--font-family-3);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Media query for get in touch section */
+@media (max-width: 768px) {
+  .touch-leftside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .get-touch {
+    display: flex;
+    flex-direction: column;
+  }
+  .touch-right-side {
+    width: 100%;
+    position: relative;
+    right: 3em;
+    padding: 0 0 20em 0;
+
+  }
+}
+
+/* Last Section  */
+.last-section-holder {
+  background-color: #171613;
+  padding: 6rem 0 1rem 0;
+}
+
+.subscribe-newsletter-header {
+  border-bottom: 1px solid #383734;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-newstext {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.right-social-handles {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  align-content: flex-end;
+}
+.button-holders {
+  display: flex;
+  gap: 0.5em;
+  width: 40%;
+  height: 5em;
+}
+span.newsletter {
+  font-family: var(--font-family-3);
+  font-weight: normal;
+  font-size: 23px;
+  color: white;
+}
+p.discount {
+  color: #fff;
+  font-size: 15px;
+  font-family: var(--font-family-3);
+  font-weight: 400;
+}
+.enter-email {
+  width: 70%;
+  height: 60px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 24px;
+  font-size: 16px;
+  border-radius: 0;
+}
+button.btn-subscribe {
+  height: 60px;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  padding: 13px 24px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px hidden;
+}
+.right-social-handles {
+  font-weight: 400;
+  font-size: 24px;
+  color: #677f8b;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--font-family-3);
+}
+.socialhandles:hover {
+  transition: all 0.4s ease-out 0s;
+  transform: rotateY(180deg);
+  color: var(--secondary-color);
+}
+
+.shopping-contents {
+  display: flex;
+  gap: 4em;
+  position: relative;
+  top: 4em;
+}
+.main-logos {
+  display: flex;
+  gap: 0.6em;
+  align-items: center;
+  position: relative;
+  top: 2em;
+}
+
+p.capitals {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: var(--font-family-3);
+  color: #fff;
+  margin-top: 0.4em;
+}
+p.shop {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fdfffd;
+  margin-top: 0.4em;
+  font-family: var(--font-family-3);
+}
+.shopping-men {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+span.shop-men {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-family-3);
+  font-style: normal;
+}
+.winter-linkss {
+  color: #bbb9b5;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0ms ease-in-out;
+}
+.winter-linkss:hover {
+  text-decoration: underline;
+  color: #bbb9b5;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+
+
+
+
+
+/* Copyright section */
+.copyright{
+  padding-top: 12rem;
+  text-align: center;
+ }
+ 
+ .copyright p {
+     color: #BBB9B5;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 2;
+ }
+ 
+ .copyright i, .copyright a {
+   color:var(--secondary-color);
+ }
+
+/* Media Query for this last section */
+@media (max-width: 768px) {
+  .last-section-holder {
+    padding: 0 0 7rem 0;
+  }
+  .subscribe-newsletter-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .last-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-newstext {
+    width: 100%;
+    position: relative;
+    top: 6em;
+  }
+  .button-holders {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: 5em;
+  }
+  .enter-email {
+    width: 100%;
+  }
+  .btn-subscribe {
+    width: 100%;
+    height: 50%;
+  }
+  .right-social-handles {
+    position: relative;
+    top: 4em;
+    display: flex;
+    right: 1.5em;
+  }
+  .shop-headers {
+    position: relative;
+    top: 5em;
+  }
+  .shopping-contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .shopping-men {
+    width: 100%;
+  }
+}
+
+
