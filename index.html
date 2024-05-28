@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oluchi's Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />
+    <link rel="icon" href="./images/loder.jpg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+    </style>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="dist/owl.carousel.min.js"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- This is the first header -->
+    <header class="first-header">
+      <nav class="navbar container">
+        <div class="left-container">
+          <ul class="nav-aboutus">
+            <li class="a">About Us</li>
+            <li class="a">Privacy</li>
+            <li class="a">FAQ</li>
+            <li class="a">Careers</li>
+          </ul>
+        </div>
+        <!-- For icons at the top right -->
+        <div class="socialmedia">
+          <div class="wish">My Wishlist</div>
+          <div class="track">Track Your Order</div>
+          <div class="icons-container icon-back">
+            <i class="bi bi-facebook" style="color: #74706b"></i>
+            <i class="bi bi-instagram" style="color: #74706b"></i>
+            <i class="bi bi-twitter" style="color: #74706b"></i>
+            <i class="bi bi-linkedin" style="color: #74706b"></i>
+            <i class="bi bi-youtube" style="color: #74706b"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- For the second navigation bar -->
+    <header class="second-header" id="navbar">
+      <nav class="second-nav container">
+        <div class="main-logo">
+          <img src="images/loder.jpg" alt="loder" />
+          <p class="capital">Capital</p>
+          <p class="shops">Shop</p>
+        </div>
+
+        <div class="main-links">
+          <ul class="second-links">
+            <li class="a"><a href="./index.html">Home</a></li>
+            <li class="a"><a href="#">Men</a></li>
+            <li class="a"><a href="#">Women</a></li>
+            <li class="a"><a href="#">Baby Collection</a></li>
+            <li>
+              <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+            </li>
+
+            <li class="a"><a href="">Blog</a></li>
+            <li class="a"><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="main-icons">
+          <i class="bi bi-search"></i>
+          <i class="bi bi-person"></i>
+          <i class="bi bi-cart2"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Menu handburger -->
+    <div class="menu-container">
+      <button class="menu-button menu">
+        <div class="dropdown">
+          <div class="menu-text-and-burger">
+            <div>MENU</div>
+            <i class="bi bi-list"></i>
+          </div>
+          <div class="dropdown-content d-none">
+            <div>
+              <a class="change-text-color" href="./Index.html">Home</a>
+              <a class="change-text-color" href="#">Men</a>
+              <a class="change-text-color" href="#">Women</a>
+              <a class="change-text-color" href="#">Baby Collection</a>
+              <a class="change-text-color" href="#">Pages</a>
+              <a class="change-text-color" href="#">Blog</a>
+              <a class="change-text-color" href="./Contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!--For the Third navbar -->
+    <header class="sale">
+      <nav class="sale container">
+        <div class="period">
+          <p class="sale">
+            Sale Up To 50% Biggest Discounts. Hurry! Limited Period
+          </p>
+          <p class="offer">Offer</p>
+          <p class="now">Shop Now</p>
+          <p></p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- For the fashion sale part where you apply swiper.js-->
+    <section class="hero-section swiper mySwiper">
+      <swiper-container
+        class="hero-container swiper-wrapper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide class="hero-container-one swiper-slide">
+          <div class="container content-one">
+            <div class="fashion-textbox swiper-slide">
+              <span class="fashion">Fashion Sale</span>
+              <p class="minimal">Minimal Menz Style</p>
+              <h4 class="paragraph">
+                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                voluptas <br />iure, delectus dignissimos facilis neque <br />
+                nulla earum.
+              </h4>
+              <button class="button-shopnow">SHOP NOW</button>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="hero-container-two">
+          <div class="container content-two">
+            <div class="fashion-textbox1 swiper-slide">
+              <span class="fashion">Fashion Sale</span>
+              <p class="minimal">Minimal Menz Style</p>
+              <h4 class="paragraph">
+                Consectetur adipisicing elit. Laborum fuga incidunt <br />
+                laboriosam voluptas iure, delectus dignissimos facilis neque
+                <br />
+                nulla earum.
+              </h4>
+              <button class="button-shopnow">SHOP NOW</button>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+
+    <!--Section2: Next section after the swiper.js: men's fashion, women's fashion and baby fashion -->
+    <section class="section-two">
+      <div class="gallery-holder container">
+        <div class="image-one card-image">
+          <div class="over-text">
+            Men's Fashion
+            <div class="shopnow"><u>Shop Now</u></div>
+          </div>
+        </div>
+
+        <div class="image-two card-image">
+          <div class="over-text">
+            Women's Fashion
+            <div class="shopnow"><u>Shop Now</u></div>
+          </div>
+        </div>
+
+        <div class="image-three card-image">
+          <div class="over-text">
+            Baby Fashion
+            <div class="shopnow"><u>Shop Now</u></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next: The navbar that says 'Trending This Week'
+-->
+    <header class="trending-container">
+      <div class="trend-header container">
+        <div class="week">Trending This Week</div>
+        <div class="trending-links">
+          <ul class="week-links">
+            <li class="textss">Men</li>
+            <li class="texts">Women</li>
+            <li class="texts">Baby</li>
+            <li class="texts">Fashion</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 3: This is the section that contains the second swiper js -->
+    <section class="clothes-gallery">
+      <div class="clothes-holder container owl-carousel">
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-1">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-2">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-3">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-4">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-1">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-2">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-3">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="clothe-and-text-holder item">
+          <div class="clothe-4">
+            <div class="icons-together">
+              <div class="icon-holder family">
+                <div class="iconify">
+                  <i class="bi bi-cart2"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div class="iconify">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothe-text">
+            <span class="cashmere">Cashmere Tank + Bag</span>
+            <p class="numbers">
+              $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 4: Customer Testimonial -->
+    <section class="customer-test">
+      <div class="customer-testimonial container">
+        <div class="testimonial-text">
+          <span class="customer-header"> Customer Testimonial </span>
+          <div class="everybody-text">
+            Everybody is different, which is why we offer styles for every body.
+            Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos
+            facilis neque nulla earum.
+          </div>
+          <div class="peter-cruiser-and-text">
+            <div class="small-image-holder">
+              <img src="./images/founder-img.jpg" alt="founder-image" />
+            </div>
+            <div class="about-petey-cruiser">
+              <span class="peter">Peter Cruiser</span>
+              <p class="designer">Designer at Colorlib</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: You may like section -->
+    <section class="you-may-like-section">
+      <div class="may-like-container">
+        <div class="you-may-like-text">You May Like</div>
+
+        <div class="clothes-holder container owl-carousel">
+          <div class="clothe-and-text-holder">
+            <div class="clothe-5">
+              <div class="icons-together">
+                <div class="icon-holder family">
+                  <div class="iconify">
+                    <i class="bi bi-cart2"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clothe-text">
+              <span class="cashmere">Cashmere Tank + Bag</span>
+              <p class="numbers">
+                $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="clothe-and-text-holder">
+            <div class="clothe-6">
+              <div class="icons-together">
+                <div class="icon-holder family">
+                  <div class="iconify">
+                    <i class="bi bi-cart2"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clothe-text">
+              <span class="cashmere">Cashmere Tank + Bag</span>
+              <p class="numbers">
+                $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="clothe-and-text-holder">
+            <div class="clothe-7">
+              <div class="icons-together">
+                <div class="icon-holder family">
+                  <div class="iconify">
+                    <i class="bi bi-cart2"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clothe-text">
+              <span class="cashmere">Cashmere Tank + Bag</span>
+              <p class="numbers">
+                $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="clothe-and-text-holder">
+            <div class="clothe-8">
+              <div class="icons-together">
+                <div class="icon-holder family">
+                  <div class="iconify">
+                    <i class="bi bi-cart2"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                  <div class="iconify">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clothe-text">
+              <span class="cashmere">Cashmere Tank + Bag</span>
+              <p class="numbers">
+                $98.00 &nbsp &nbsp<span class="dollars">$120.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is for Latest News -->
+    <div class="latest-news-section">
+      <div class="latest-news-container container">
+        <div class="latest-news-title">Latest News</div>
+        <div class="fashiontips-card">
+          <div class="cart-container">
+            <img src="./images/blog1.jpg" alt="blog 1" style="width: 100%" />
+
+            <span class="fashiontips">Fashion Tips</span>
+
+            <h3 class="curling-irons">What Curling Irons Are The Best Ones</h3>
+
+            <p class="elit">
+              Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+              voluptas iure, delectus..
+            </p>
+
+            <u class="read">Read More</u>
+            <u></u>
+            <u></u>
+            <u></u>
+          </div>
+
+          <div class="cart-container">
+            <img src="./images/blog2.jpg" alt="blog 1" style="width: 100%" />
+
+            <span class="fashiontips">Fashion Tips</span>
+
+            <h3 class="curling-irons">
+              Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes
+            </h3>
+
+            <p class="elit">
+              Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+              voluptas iure, delectus..
+            </p>
+
+            <u class="read">Read More</u>
+          </div>
+
+          <div class="cart-container">
+            <img src="./images/blog3.jpg" alt="blog 1" style="width: 100%" />
+
+            <span class="fashiontips">Fashion Tips</span>
+
+            <h3 class="curling-irons">What Curling Irons Are The Best Ones</h3>
+
+            <p class="elit">
+              Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+              voluptas iure, delectus..
+            </p>
+
+            <u class="read">Read More</u>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fast & Free Delivery, Secure Payment, Money Back Guarantee -->
+
+    <div class="delivery-section">
+      <div class="delivery-container container">
+        <div class="delivery-product-card" data-aos="fade-up">
+          <div class="capture1">
+            <img src="./images/Capture1.jpg" alt="capture1" />
+          </div>
+          <div>
+            <span class="fast">Fast & Free Delivery</span>
+            <p class="free">Free delivery on all orders</p>
+          </div>
+        </div>
+
+        <div class="delivery-product-card">
+          <div class="capture1">
+            <img src="./images/Capture2.jpg" alt="capture1" />
+          </div>
+          <div>
+            <span class="fast">Fast & Free Delivery</span>
+            <p class="free">Free delivery on all orders</p>
+          </div>
+        </div>
+
+        <div class="delivery-product-card">
+          <div class="capture1">
+            <img src="./images/Capture3.jpg" alt="capture1" />
+          </div>
+          <div>
+            <span class="fast">Fast & Free Delivery</span>
+            <p class="free">Free delivery on all orders</p>
+          </div>
+        </div>
+
+        <div class="delivery-product-card">
+          <div class="capture1">
+            <img src="./images/Capture4.jpg" alt="capture1" />
+          </div>
+          <div>
+            <span class="fast">Fast & Free Delivery</span>
+            <p class="free">Free delivery on all orders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Last Section -->
+    <div class="last-section-holder">
+      <div class="last-section-container container">
+        <div class="subscribe-newsletter-header">
+          <div class="subscribe-newstext">
+            <span class="newsletter">Subscribe Newsletter</span>
+            <p class="discount">
+              Subscribe newsletter to get 5% on all <br />products.
+            </p>
+          </div>
+
+          <div class="button-holders">
+            <input class="enter-email" placeholder="Enter your email" />
+            <button class="btn-subscribe">Subscribe</button>
+          </div>
+
+          <div class="right-social-handles">
+            <i class="bi bi-facebook socialhandles"></i>
+            <i class="bi bi-instagram socialhandles"></i>
+            <i class="bi bi-youtube socialhandles"></i>
+          </div>
+        </div>
+
+        <div class="shop-headers">
+          <div class="shopping-contents">
+            <div class="main-logos">
+              <img src="images/loder.jpg" alt="loder" />
+              <p class="capitals">Capital</p>
+              <p class="shop">Shop</p>
+            </div>
+
+            <div class="shopping-men">
+              <span class="shop-men">Shop Men</span>
+              <a class="winter-linkss" href="#">Clothing Fashion</a>
+              <a class="winter-linkss" href="#">Winter</a>
+              <a class="winter-linkss" href="#">Summer</a>
+              <a class="winter-linkss" href="#">Formal</a>
+              <a class="winter-linkss" href="#">Casual</a>
+            </div>
+
+            <div class="shopping-men">
+              <span class="shop-men">Shop Women</span>
+              <a class="winter-linkss" href="#">Clothing Fashion</a>
+              <a class="winter-linkss" href="#">Winter</a>
+              <a class="winter-linkss" href="#">Summer</a>
+              <a class="winter-linkss" href="#">Formal</a>
+              <a class="winter-linkss" href="#">Casual</a>
+            </div>
+
+            <div class="shopping-men">
+              <span class="shop-men">Baby Collection</span>
+              <a class="winter-linkss" href="#">Clothing Fashion</a>
+              <a class="winter-linkss" href="#">Winter</a>
+              <a class="winter-linkss" href="#">Summer</a>
+              <a class="winter-linkss" href="#">Formal</a>
+              <a class="winter-linkss" href="#">Casual</a>
+            </div>
+
+            <div class="shopping-men">
+              <span class="shop-men">Quick Links</span>
+              <a class="winter-linkss" href="#">Track Your Order</a>
+              <a class="winter-linkss" href="#">Support</a>
+              <a class="winter-linkss" href="#">FAQ</a>
+              <a class="winter-linkss" href="#">Carrier</a>
+              <a class="winter-linkss" href="#">About</a>
+              <a class="winter-linkss" href="#">Contact Us</a>
+            </div>
+          </div>
+
+         
+       <!-- Copyright section -->
+
+        <div class="copyright">
+          <p>Copyright ©2024 All rights reserved | This template is made with <i class="bi bi-heart loveshape"></i>
+            by <a class="colorlib" href="">Colorlib</a></p>
+        </div>
+        
+        
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- this is AOS JS link -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    // script.js
+    let navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        navbar.classList.add("fixed");
+        console.log("Navbar is fixed.");
+      } else {
+        navbar.classList.remove("fixed");
+        console.log("Navbar is not fixed.");
+      }
+    });
+
+
+    let menuIcon = document.querySelector(".menu-text-and-burger");
+
+    let dropdownMenu = document.querySelector(".dropdown-content");
+
+    menuIcon.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("d-none");
+    })
+  </script>
+</html>
